@@ -6,20 +6,23 @@ Bash script for filling the TING pen with audio books under Linux, which have to
 - bash as shell (maybe other can run well, but can't be guaranteed)
 
 ## Before using the script
-- put in the USB cable into the TING pen
+- turn TING pen on
+- touch marker on book you want to upload with your TING pen
+- put in the USB cable into the TING pen and connnec it to your computer
+- wait untill pen is detected and mounted (or when it is detected mount it your self) 
 
 ## Usage of the script
 ```bash
-./linux.sh
+./ting.sh
 ```
 For auto detection of Ting folder over mount point and TBD.TXT/tbd.txt filename.
 
 ## Usage if auto detection fails
 Check in which folder the $ting folder shows up, where the TBD.TXT file is
 ```shell
-./linux.sh <pathOfFolderWhere$tingIs>
+./ting.sh <pathOfFolderWhere$tingIs>
 ```
-For example ./linux.sh /media/Ting if the /media/Ting includes the folder $ting in which the TBD.TXT file is
+For example ./ting.sh /media/Ting if the /media/Ting includes the folder $ting in which the TBD.TXT file is
 
 ## Contributors
 - Ralf Meyer https://github.com/ralfdonald
